@@ -3,17 +3,15 @@
   "version": "0.0.1",
   "description": "Node.js module for native bindings",
   "main": "index.js",
-  "libraries": [
-    "v8"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "make",
-    "debug": "make debug",
-    "clean": "make clean"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Wilhelm Matilainen",
+  "license": "MIT",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/wilhelmmatilainen/naio"
+  },
   "dependencies": {},
   "devDependencies": {}
 }
