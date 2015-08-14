@@ -1,0 +1,19 @@
+{
+  "name": "naio",
+  "version": "0.0.1",
+  "description": "Node.js module for native bindings",
+  "main": "index.js",
+  "libraries": [
+    "v8"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "make",
+    "debug": "make debug",
+    "clean": "make clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
