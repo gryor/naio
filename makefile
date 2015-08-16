@@ -24,7 +24,7 @@ version = ${call opts, version}
 
 .phony: all clean dirs
 
-all: debug release
+all: debug
 
 release: dirs ${csources:.c=.c.lib.o} ${ccsources:.cc=.cc.lib.o}
 ifeq ($(strip $(ccsources)),)

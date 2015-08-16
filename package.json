@@ -1,6 +1,6 @@
 {
   "name": "naio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js module for native bindings",
   "main": "index.js",
   "scripts": {
