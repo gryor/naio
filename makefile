@@ -2,9 +2,14 @@
 
 cc = gcc
 ccc = g++
-opts = ${shell node node_modules/naio/opts $(1)}
 
-includes = node_modules/nan /usr/include/node
+node = ${shell node -e $(1)}
+opts = ${call node, "var o = require('./package.json').$(1); if(Array.isArray(o)) o = o.join(' '); console.log(o);"}
+paths = ${call node, "console.log(module.paths.join(' '));"}
+
+
+
+includes = ${paths} /usr/include/node
 
 flags = ${addprefix -I, ${includes}} -fPIC -DPIC -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DEV_MULTIPLICITY=0
 
