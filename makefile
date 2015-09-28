@@ -1,7 +1,7 @@
 # libraries are read from a file named libraries
 
-cc = gcc
-ccc = g++
+cc ?= gcc
+ccc ?= g++
 
 node = ${shell node -e $(1)}
 opts = ${call node, "var o = require('./package.json').$(1); if(Array.isArray(o)) o = o.join(' '); console.log(o);"}
