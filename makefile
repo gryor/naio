@@ -13,11 +13,11 @@ includes = ${paths} /usr/include/node
 
 flags = ${addprefix -I, ${includes}} -fPIC -DPIC -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DEV_MULTIPLICITY=0
 
-cflags = -std=c11
+cflags =
 cflags_debug = -g -Wall
 cflags_release = -O3
 
-ccflags = -std=c++11
+ccflags =
 ccflags_debug = -g -Wall
 ccflags_release = -O3
 
